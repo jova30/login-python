@@ -1,10 +1,20 @@
 usuario_correcto = "admin"
 contrasena_correcta = "12345"
 
-usuario = input("Usuario: ")
-contrasena = input("Contraseña: ")
+intentos = 0
 
-if usuario == usuario_correcto and contrasena == contrasena_correcta:
-    print("¡Bienvenido!")
-else:
-    print("Usuario o contraseña incorrectos.")
+while intentos < 3:
+
+    usuario = input("Usuario: ")
+    contrasena = input("Contraseña: ")
+
+    if usuario == usuario_correcto and contrasena == contrasena_correcta:
+        print("¡Bienvenido!")
+        break
+    else:
+        intentos += 1
+        print("Usuario o contraseña incorrectos.")
+        print("Intentos restantes:", 3 - intentos)
+
+if intentos == 3:
+    print("Cuenta bloqueada.")
