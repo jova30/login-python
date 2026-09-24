@@ -15,6 +15,8 @@ while intentos < 3:
         intentos += 1
         print("Usuario o contraseña incorrectos.")
         print("Intentos restantes:", 3 - intentos)
+        if intentos < 3:
+           print("Puedes volver a intentarlo.")
 
 if intentos == 3:
     print("Cuenta bloqueada.")
