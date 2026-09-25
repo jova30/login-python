@@ -9,8 +9,9 @@ while intentos < 3:
     contrasena = input("Contraseña: ")
 
     if usuario == usuario_correcto and contrasena == contrasena_correcta:
-        print("¡Bienvenido!")
-        break
+      print("¡Bienvenido!")
+      print("Has iniciado sesión correctamente.")
+      break
     else:
         intentos += 1
         print("Usuario o contraseña incorrectos.")
