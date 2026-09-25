@@ -9,7 +9,7 @@ while intentos < 3:
     contrasena = input("Contraseña: ")
 
     if usuario == usuario_correcto and contrasena == contrasena_correcta:
-      print("¡Bienvenido!")
+      print("Bienvenido al sistema")
       print("Has iniciado sesión correctamente.")
       break
     else:
